@@ -1,0 +1,38 @@
+//tabpanels
+.tabs-wrapper {
+    margin: 0 1em;
+}
+.tab-list {
+    gap: .7em;
+    width: fit-content;
+}
+.tab-list-projects {
+    gap: .6em;
+    justify-self: center;
+}
+.tabpanel {
+    padding: 1.5em;
+    display: none;
+    opacity: 0;
+    transition: opacity .2s ease;
+    &.visible {
+        display: block;
+    }
+    &.active {
+        opacity: 1;
+    }
+}
+.tab-indicator {
+    border: 2px solid $clr-primary;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    &[aria-selected="true"] {
+        background-color: $clr-primary;
+    }
+    &:focus {
+        outline-color: $clr-primary;
+    }
+}
+
+

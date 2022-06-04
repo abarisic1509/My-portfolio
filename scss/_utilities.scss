@@ -1,0 +1,44 @@
+.visuallyHidden {
+    clip: rect(0 0 0 0);clip-path: inset(50%);height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+.main-container {
+    width: 100vw;
+    min-height: 100vh;
+    text-align: center;
+    grid-template-columns: 1fr;
+    justify-content: center;
+}
+.container {
+    max-width: 1000px;
+}
+.flex {
+    display: flex;
+    &.jc-sb {
+        justify-content: space-between;
+    }
+    &.ai-c {
+        align-items: center;
+    }
+    &.dir-col {
+        flex-direction: column;
+    }
+}
+.grid {
+    display: grid;
+}
+.main-grid {
+    grid-template-rows: 1fr auto;
+    grid-template-areas: 
+    'body'
+    'header';
+    .header {
+        grid-area: header;
+    }
+    main {
+        grid-area: body;
+    }
+}
