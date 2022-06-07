@@ -61,7 +61,10 @@
 .technology-icon-list-about {
     gap: 1.5em;
     padding: 1em;
-    flex-wrap: wrap;    
+    flex-wrap: wrap; 
+    max-width: 285px;   
+    align-self: center;
+    justify-content: center;
 }
 
 

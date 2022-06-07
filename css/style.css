@@ -617,6 +617,13 @@ body {
   padding: 1em;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  max-width: 285px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .about-img {
